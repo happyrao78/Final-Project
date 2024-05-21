@@ -2,7 +2,7 @@
 
 export const barChartDataDailyTraffic = [
   {
-    name: "Daily Traffic",
+    name: "Topics",
     data: [20, 30, 40, 20, 45, 50, 30],
   },
 ];
@@ -72,7 +72,7 @@ export const barChartOptionsDailyTraffic = {
   fill: {
     type: "gradient",
     gradient: {
-      type: "vertical",
+      type: "horizontal",
       shadeIntensity: 1,
       opacityFrom: 0.7,
       opacityTo: 0.9,
@@ -106,17 +106,35 @@ export const barChartOptionsDailyTraffic = {
 // Consumption Users Reports
 
 export const barChartDataConsumption = [
+ 
   {
-    name: "PRODUCT A",
-    data: [400, 370, 330, 390, 320, 350, 360, 320, 380],
+    name: "Questions",
+    data: [400, 370, 330, 390, 320, 350, 360, 320, 380,550,400, 370, 330, 390, 320, 350, 360, 320, 380,550],
+  
   },
   {
-    name: "PRODUCT B",
-    data: [400, 370, 330, 390, 320, 350, 360, 320, 380],
+    name: "Questions",
+    data: [400, 370, 330, 390, 320, 350, 360, 320, 380,550,400, 370, 330, 390, 320, 350, 360, 320, 380,550],
   },
   {
-    name: "PRODUCT C",
-    data: [400, 370, 330, 390, 320, 350, 360, 320, 380],
+    name: "Questions",
+    data: [400, 370, 330, 390, 320, 350, 360, 320, 380,550,400, 370, 330, 390, 320, 350, 360, 320, 380,550],
+  },
+  {
+    name: "Questions",
+    data: [400, 370, 330, 390, 320, 350, 360, 320, 380,550,400, 370, 330, 390, 320, 350, 360, 320, 380,550],
+  },
+  {
+    name: "Questions",
+    data: [400, 370, 330, 390, 320, 350, 360, 320, 380,550,400, 370, 330, 390, 320, 350, 360, 320, 380,550],
+  },
+  {
+    name: "Questions",
+    data: [400, 370, 330, 390, 320, 350, 360, 320, 380,550,400, 370, 330, 390, 320, 350, 360, 320, 380,550],
+  },
+  {
+    name: "Questions",
+    data: [400, 370, 330, 390, 320, 350, 360, 320, 380,550,400, 370, 330, 390, 320, 350, 360, 320, 380,550],
   },
 ];
 
@@ -141,7 +159,7 @@ export const barChartOptionsConsumption = {
     theme: "dark",
   },
   xaxis: {
-    categories: ["17", "18", "19", "20", "21", "22", "23", "24", "25"],
+    categories: ["12","13","14","15","16","17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"],
     show: false,
     labels: {
       show: true,
@@ -170,18 +188,17 @@ export const barChartOptionsConsumption = {
       },
     },
   },
-
   grid: {
-    borderColor: "rgba(163, 174, 208, 0.3)",
+    borderColor: "rgba(15, 174, 208, 0.3)",
     show: true,
     yaxis: {
       lines: {
         show: false,
-        opacity: 0.5,
+        opacity: 5,
       },
     },
     row: {
-      opacity: 0.5,
+      opacity: 3,
     },
     xaxis: {
       lines: {
@@ -191,26 +208,37 @@ export const barChartOptionsConsumption = {
   },
   fill: {
     type: "solid",
-    colors: ["#5E37FF", "#6AD2FF", "#E1E9F8"],
+    colors: ["#90EE90"], // Green color scheme
+    gradient: {
+      shadeIntensity: 1,
+      opacityFrom: 10,
+      opacityTo: 15,
+      stops: [0, 100],
+    },
   },
   legend: {
     show: false,
   },
-  colors: ["#5E37FF", "#6AD2FF", "#E1E9F8"],
   dataLabels: {
     enabled: false,
   },
   plotOptions: {
     bar: {
-      borderRadius: 10,
-      columnWidth: "20px",
+      horizontal: false,
+      columnWidth: "80%",
+      endingShape: "rounded",
+      distributed: false,
+      dataLabels: {
+        position: "top",
+      },
     },
   },
 };
 
+
 export const pieChartOptions = {
-  labels: ["Your files", "System", "Empty"],
-  colors: ["#4318FF", "#6AD2FF", "#EFF4FB"],
+  labels: ["Intro 1", "Intro 2","Intro 3"],
+  colors: ["#4318FF", "#6AD2FF"],
   chart: {
     width: "50px",
   },
@@ -247,17 +275,21 @@ export const pieChartOptions = {
   },
 };
 
-export const pieChartData = [63, 25, 12];
+export const pieChartData = [40, 22, 11];
 
 // Total Spent Default
 
 export const lineChartDataTotalSpent = [
   {
-    name: "Revenue",
-    data: [50, 64, 48, 66, 49, 68],
+    name: "Chapter 1",
+    data: [45, 34, 56, 67, 12, 98],
   },
   {
-    name: "Profit",
+    name: "Chapter 2",
+    data: [30, 40, 24, 46, 20, 46],
+  },
+  {
+    name: "Chapter 3",
     data: [30, 40, 24, 46, 20, 46],
   },
 ];
@@ -287,7 +319,7 @@ export const lineChartOptionsTotalSpent = {
     fillOpacity: 1,
     discrete: [],
     shape: "circle",
-    radius: 2,
+    radius: 1,
     offsetX: 0,
     offsetY: 0,
     showNullDataPoints: true,
@@ -304,7 +336,7 @@ export const lineChartOptionsTotalSpent = {
   },
   xaxis: {
     type: "numeric",
-    categories: ["SEP", "OCT", "NOV", "DEC", "JAN", "FEB"],
+    categories: [ "2019", "2020", "2021", "2022", "2023","2024"],
     labels: {
       style: {
         colors: "#A3AED0",

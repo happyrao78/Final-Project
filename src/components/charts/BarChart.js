@@ -22,7 +22,7 @@ class ColumnChart extends Component {
       <Chart
         options={this.state.chartOptions}
         series={this.state.chartData}
-        type='bar'
+        type='heatmap'
         width='100%'
         height='100%'
       />

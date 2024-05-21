@@ -1,31 +1,31 @@
 [{
-  "name":["Horizon UI PRO",false],
-  "quantity": 2458, 
-  "date": "12 Jan 2021",
-  "progress": 17.5  
+  "name":["Chapter 1",false],
+  "quantity": 2892, 
+  "date": "12 May 2024",
+  "progress": 57.5  
 },
 {
-  "name":["Horizon UI Free",true],
-  "quantity": 1485, 
-  "date": "21 Feb 2021",
-  "progress": 10.8  
+  "name":["Chapter 2",true],
+  "quantity": 2835, 
+  "date": "21 April 2024",
+  "progress": 50.8  
 },
 {
-  "name":["Weekly Update",true],
+  "name":["Chapter 3",true],
   "quantity": 1024, 
-  "date": "13 Mar 2021",
-  "progress": 21.3  
+  "date": "13 April 2024",
+  "progress": 41.3  
 },
 {
-  "name":["Venus 3D Asset",true],
+  "name":["Chapter 4",true],
   "quantity": 858, 
-  "date": "24 Jan 2021",
-  "progress": 31.5  
+  "date": "24 Jan 2024",
+  "progress": 38.5  
 },
 {
-  "name":["Marketplace",false],
+  "name":["Chapter 5",false],
   "quantity": 258, 
-  "date": "24 Oct 2022",
-  "progress": 12.2  
+  "date": "2 Oct 2023",
+  "progress": 22.2  
 }
 ]

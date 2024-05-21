@@ -53,7 +53,7 @@ export default function SidebarDocs() {
           px='10px'
           mt="10px"
           mb='6px'>
-          Upgrade to PRO
+          Inspire | Learn
         </Text>
         <Text
           fontSize='14px'
@@ -62,11 +62,10 @@ export default function SidebarDocs() {
           px='10px'
           mb='6px'
           textAlign='center'>
-          Improve your development process and start doing more with Horizon UI
-          PRO!
+          Get started with the official student portal.
         </Text>
       </Flex>
-      <Link href='https://horizon-ui.com/pro?ref=horizon-chakra-free'>
+      <Link href='#'>
         <Button
           bg='whiteAlpha.300'
           _hover={{ bg: "whiteAlpha.200" }}
@@ -77,7 +76,7 @@ export default function SidebarDocs() {
           fontSize='sm'
           minW='185px'
           mx='auto'>
-          Upgrade to PRO
+          Upgrade
         </Button>
       </Link>
     </Flex>

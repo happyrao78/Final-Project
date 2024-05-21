@@ -1,26 +1,4 @@
-/*!
-  _   _  ___  ____  ___ ________  _   _   _   _ ___   
- | | | |/ _ \|  _ \|_ _|__  / _ \| \ | | | | | |_ _| 
- | |_| | | | | |_) || |  / / | | |  \| | | | | || | 
- |  _  | |_| |  _ < | | / /| |_| | |\  | | |_| || |
- |_| |_|\___/|_| \_\___/____\___/|_| \_|  \___/|___|
-                                                                                                                                                                                                                                                                                                                                       
-=========================================================
-* Horizon UI - v1.1.0
-=========================================================
 
-* Product Page: https://www.horizon-ui.com/
-* Copyright 2023 Horizon UI (https://www.horizon-ui.com/)
-
-* Designed and Coded by Simmmple
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-
-// Chakra imports
 import {
   Avatar,
   Box,
@@ -29,6 +7,7 @@ import {
   Icon,
   Select,
   SimpleGrid,
+  
   useColorModeValue,
 } from "@chakra-ui/react";
 // Assets
@@ -38,9 +17,13 @@ import MiniCalendar from "components/calendar/MiniCalendar";
 import MiniStatistics from "components/card/MiniStatistics";
 import IconBox from "components/icons/IconBox";
 import React from "react";
+import{
+  FaFire,
+} from "react-icons/fa";
 import {
   MdAddTask,
   MdAttachMoney,
+  
   MdBarChart,
   MdFileCopy,
 } from "react-icons/md";
@@ -79,8 +62,8 @@ export default function UserReports() {
               }
             />
           }
-          name='Earnings'
-          value='$350.4'
+          name='Total Questions Solved'
+          value='156'
         />
         <MiniStatistics
           startContent={
@@ -89,19 +72,19 @@ export default function UserReports() {
               h='56px'
               bg={boxBg}
               icon={
-                <Icon w='32px' h='32px' as={MdAttachMoney} color={brandColor} />
+                <Icon w='32px' h='32px' as={FaFire} color={brandColor} />
               }
             />
           }
-          name='Spend this month'
-          value='$642.39'
+          name='Maximum Streak'
+          value='55'
         />
-        <MiniStatistics growth='+23%' name='Sales' value='$574.34' />
+        <MiniStatistics growth='+23%' name='Test Scores' value='59' />
         <MiniStatistics
           endContent={
             <Flex me='-16px' mt='10px'>
               <FormLabel htmlFor='balance'>
-                <Avatar src={Usa} />
+                {/* <Avatar src={Usa} /> */}
               </FormLabel>
               <Select
                 id='balance'
@@ -109,14 +92,12 @@ export default function UserReports() {
                 mt='5px'
                 me='0px'
                 defaultValue='usd'>
-                <option value='usd'>USD</option>
-                <option value='eur'>EUR</option>
-                <option value='gba'>GBA</option>
+                
               </Select>
             </Flex>
           }
-          name='Your balance'
-          value='$1,000'
+          name='Total Tests Taken'
+          value='86'
         />
         <MiniStatistics
           startContent={

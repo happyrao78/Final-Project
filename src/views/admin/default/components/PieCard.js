@@ -26,7 +26,7 @@ export default function Conversion(props) {
         w='100%'
         mb='8px'>
         <Text color={textColor} fontSize='md' fontWeight='600' mt='4px'>
-          Your Pie Chart
+          Questions Solved
         </Text>
         <Select
           fontSize='sm'
@@ -34,9 +34,10 @@ export default function Conversion(props) {
           defaultValue='monthly'
           width='unset'
           fontWeight='700'>
-          <option value='daily'>Daily</option>
-          <option value='monthly'>Monthly</option>
-          <option value='yearly'>Yearly</option>
+          <option value='daily'>Module 1</option>
+          <option value='monthly'>Module 2</option>
+          <option value='monthly'>Module 3</option>
+          
         </Select>
       </Flex>
 
@@ -63,11 +64,11 @@ export default function Conversion(props) {
               color='secondaryGray.600'
               fontWeight='700'
               mb='5px'>
-              Your files
+             Module 1
             </Text>
           </Flex>
           <Text fontSize='lg' color={textColor} fontWeight='700'>
-            63%
+            40
           </Text>
         </Flex>
         <VSeparator mx={{ base: "60px", xl: "60px", "2xl": "60px" }} />
@@ -79,11 +80,27 @@ export default function Conversion(props) {
               color='secondaryGray.600'
               fontWeight='700'
               mb='5px'>
-              System
+              Module 2
             </Text>
           </Flex>
           <Text fontSize='lg' color={textColor} fontWeight='700'>
-            25%
+            22
+          </Text>
+        </Flex>
+        <VSeparator mx={{ base: "60px", xl: "60px", "2xl": "60px" }} />
+        <Flex direction='column' py='5px'>
+          <Flex align='center'>
+            <Box h='8px' w='8px' bg='secondaryGray.200' borderRadius='50%' me='4px' />
+            <Text
+              fontSize='xs'
+              color='secondaryGray.600'
+              fontWeight='700'
+              mb='5px'>
+             Module 3
+            </Text>
+          </Flex>
+          <Text fontSize='lg' color={textColor} fontWeight='700'>
+            11
           </Text>
         </Flex>
       </Card>

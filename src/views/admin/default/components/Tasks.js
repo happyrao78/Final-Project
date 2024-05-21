@@ -47,7 +47,7 @@ export default function Conversion(props) {
             color={textColor}
             fontSize='md'
             textAlign='start'>
-            Landing Page Design
+            Data Structures & Algorithms
           </Text>
           <Icon
             ms='auto'
@@ -64,7 +64,7 @@ export default function Conversion(props) {
             color={textColor}
             fontSize='md'
             textAlign='start'>
-            Dashboard Builder
+            Basics of Rust
           </Text>
           <Icon
             ms='auto'
@@ -115,7 +115,7 @@ export default function Conversion(props) {
             color={textColor}
             fontSize='md'
             textAlign='start'>
-            Promotional LP
+            C#
           </Text>
           <Icon
             ms='auto'

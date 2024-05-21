@@ -32,8 +32,8 @@ export default function UserActivity(props) {
           display='flex'
           alignItems='center'
           defaultValue='Weekly'>
-          <option value='Weekly'>Weekly</option>
-          <option value='Daily'>Daily</option>
+          <option value='Weekly'>Module 1</option>
+          <option value='Daily'>Module 2</option>
           <option value='Monthly'>Monthly</option>
         </Select>
       </Flex>

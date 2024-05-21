@@ -41,8 +41,18 @@ export default function WeeklyRevenue(props) {
           fontSize='xl'
           fontWeight='700'
           lineHeight='100%'>
-          Weekly Revenue
+          No. of Problems Solved
         </Text>
+        <Text
+        me='auto'
+        mr='10px'
+          color={textColor}
+          fontSize='md'
+          fontWeight='500'
+          lineHeight='100%'
+          >
+          Current Streak : 3</Text>
+          
         <Button
           align='center'
           justifyContent='center'
