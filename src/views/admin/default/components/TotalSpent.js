@@ -82,7 +82,7 @@ export default function TotalSpent(props) {
         <Flex flexDirection='column' me='20px' mt='28px'>
           <Text
             color={textColor}
-            fontSize='34px'
+            fontSize='25px'
             textAlign='start'
             fontWeight='700'
             lineHeight='100%'>

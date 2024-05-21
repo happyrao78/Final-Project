@@ -22,16 +22,11 @@ export default function WeeklyRevenue(props) {
 
   // Chakra Color Mode
   const textColor = useColorModeValue("secondaryGray.900", "white");
-  const iconColor = useColorModeValue("brand.500", "white");
-  const bgButton = useColorModeValue("secondaryGray.300", "whiteAlpha.100");
-  const bgHover = useColorModeValue(
-    { bg: "secondaryGray.400" },
-    { bg: "whiteAlpha.50" }
-  );
-  const bgFocus = useColorModeValue(
-    { bg: "secondaryGray.300" },
-    { bg: "whiteAlpha.100" }
-  );
+  const iconColor = useColorModeValue("white", "white");
+  const bgButton = useColorModeValue("green.500", "green.500");
+  const bgHover = useColorModeValue("green.400", "green.400");
+  const bgFocus = useColorModeValue("green.600", "green.600");
+
   return (
     <Card align='center' direction='column' w='100%' {...rest}>
       <Flex align='center' w='100%' px='15px' py='10px'>
@@ -44,22 +39,22 @@ export default function WeeklyRevenue(props) {
           No. of Problems Solved
         </Text>
         <Text
-        me='auto'
-        mr='10px'
+          me='auto'
+          mr='10px'
           color={textColor}
           fontSize='md'
           fontWeight='500'
           lineHeight='100%'
-          >
-          Current Streak : 3</Text>
-          
+        >
+          Current Streak: 3
+        </Text>
         <Button
           align='center'
           justifyContent='center'
           bg={bgButton}
-          _hover={bgHover}
-          _focus={bgFocus}
-          _active={bgFocus}
+          _hover={{ bg: bgHover }}
+          _focus={{ bg: bgFocus }}
+          _active={{ bg: bgFocus }}
           w='37px'
           h='37px'
           lineHeight='100%'
